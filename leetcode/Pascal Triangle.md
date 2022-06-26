@@ -4,9 +4,13 @@ Given an integer numRows, return the first numRows of Pascal's triangle.
 
 ## Explanation
 In **Pascal's triangle,** each number is the sum of the two numbers directly above it.
-in every row, the array starts qwith 1 and ends with 1 except for the first row.
+in every row, the array starts with 1 and ends with 1 except for the first row.
 
-![alt text](image url "../images/pascalTriangle.jpg")
+![Pascal Triangle]( "../images/pascalTriangle.jpg")
+
+**For Example:**
+Input : numRows=5;
+output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
 ## Algorithm
 
 ## Code

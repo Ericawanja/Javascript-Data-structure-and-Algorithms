@@ -85,11 +85,13 @@ class LinkedList {
       this.head = this.head.next;
     }
   }
+ 
 }
 const ll = new LinkedList();
 ll.insertFirst(400);
 ll.insertFirst(29);
 ll.insertFirst(300);
+console.log(ll)
 ll.insertLast(12);
 ll.insertatIndex(23, 0)
 ll.insertatIndex(24,1)

@@ -11,9 +11,20 @@ class ListNode {
     let dummyNode=dummy;
     let ptr1 = l1;
     let ptr2 = l2;
-    
-    while(ptr1 !==null && ptr2 != null){
-        let sumValue = parseInt(ptr1.val)+ parseInt(ptr2.val);
+    let carry=0;
+    if(!l1 && !l2) return;
+    if (l1=null )return l2;
+    if(l2=null) returnl1
+    while(ptr1 || ptr2 ){
+      let value1 = ptr1.val ? parseInt(ptr1.val): 0;
+      let value2 = ptr2.val ? parseInt(ptr2.val)  :0
+        let sumValue = value1+ value2 + carry;
+        if(sumValue>=10){
+          sumValue = 0;
+          carry =1;
+        }else{
+          carry =0;
+        }
         const node= new ListNode(sumValue)
         dummyNode.next = node
         ptr1=ptr1.next;
@@ -26,15 +37,14 @@ class ListNode {
 };
 
 let list1 = {
-    val: 5,
-    next: { val: 3,
-            next: { val: 8, 
-              next: null } } 
-    }
+    val: 2,
+    next: { val: 4,
+            next:  null } } 
+    
     let list2 = {
-        val: 1,
-        next: { val: 3,
-                next: { val: 1, 
+        val: 5,
+        next: { val: 6,
+                next: { val: 4, 
                   next: null } } }
           
         

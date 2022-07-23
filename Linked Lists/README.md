@@ -14,7 +14,7 @@ holds the data value while the other parts contains a link to the next item. How
 
 ## Why and when to use the Linked lists
 
-Linked lists are recomended if you have a list of objects with links to the next item in the list. Its main advantage is; 
+Linked lists are recommended if you have a list of objects with links to the next item in the list. Its main advantage is; 
  - Easy insertion
  
  Inserting an element in array is quite expensive because you will have to shift all other items. Similarly, deleting an element in array, will leave holes or else you will have to shift the positions of the elements after the removed element.
@@ -109,7 +109,7 @@ When the loop terminates, the next property of the previous item will point to t
 
       return;
     }
-    //inserting at the first position. You can resue the insertFirst()
+    //inserting at the first position. You can reuse the insertFirst()
     if(index == 0){
       this.head = new Node(data, this.head) //making the new node the head and the next value, the previous head
         console.log( this.head)

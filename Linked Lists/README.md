@@ -210,5 +210,37 @@ printList() {
     }
   }
 ```
+
+## Big O Analysis
+<table>
+<tr>
+<th>Operation</th>
+<th>O</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>Insertion</td>
+<td>O(1)</td>
+<td> You just need to change the pointers of the previous node and the next node</td>
+
+</tr>
+<tr>
+<td>Deletion</td>
+<td>O(1)</td>
+
+<td> You need to change the pointer of the previous node only
+</td>
+</tr>
+<tr>
+<td>Search</td>
+<td>O(n)</td>
+<td> We have iterate sequentially over every element until we get to the target</td>
+</tr>
+<tr>
+<td>Traversing</td>
+<td>O(n)</td>
+<td>WE have to sequentially iterate over ever element</td>
+</tr>
+</table>
 # Conclusion
 The best way to understand data structures is through practice. After understanding the basics, try writing the code snippets or look for leetcode problems and solve.

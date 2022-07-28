@@ -7,8 +7,6 @@ var reverseList = function(head) {
         current.next = previous;
         previous = current;
         current = next;
-        
-
     }
     return previous
     

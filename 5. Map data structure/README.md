@@ -62,7 +62,7 @@ Same as objects, maps store key, value pair elements. However, the two are signi
 ## Map operations
 1. add element 
 
-`set()` method is used to add elements to a map. The set method receveives the key-value pair of the new element as a parameter.
+`set()` method is used to add elements to a map. The set method receives the key-value pair of the new element as a parameter.
 
 ```javascript
 fruits.set("apples", 500);
@@ -120,7 +120,7 @@ console.log(fruits.values())
 { 500, 300, 200 }
 */
 ```
-`entries()` trasverses the map and returns an array of key-value pair `[key, values]`
+`entries()` transverses the map and returns an array of key-value pair `[key, values]`
 
 ```javascript
 const fruits = new Map([
@@ -148,5 +148,4 @@ fruits.size //outputs 3
 
 ## Summary
 Even though objects and maps look quite similar, they are quite different. Map have size property and the keys can be anything including functions and objects.
-
-Objects do not have size property while the keys must be stritly strings. 
+Objects do not have size property while the keys must be strictly strings. 

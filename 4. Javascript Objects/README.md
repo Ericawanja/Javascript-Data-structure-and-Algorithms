@@ -4,7 +4,7 @@ Objects are dictionary like items which are defined as a key-value pair.
 
 It is a reference data type. That is, object variables are assigned reference pointer that points the location storage in memory. Loosely speaking, if you modify the assigned variable(pointer) then the original value in the memory will be modified too. 
 
-Unlike arrays, objects are unodered hence you cannot use indexes to access items. Don't worry we will discuss later how to access items.
+Unlike arrays, objects are unordered hence you cannot use indexes to access items. Don't worry we will discuss later how to access items.
 
 Example of an object;
 
@@ -14,10 +14,13 @@ let person = {
     lastName: 'Doe'
 };
 ```
-## How to create an object in javaScript
+## How to create an object in JavaScript
    - Object literal
 
-This is the easiest way to create objects in javascript where you define and initialize the object inside curly brackets with a key:value pair. 
+This is the easiest way to create objects in JavaScript where you define and initialize the object inside curly brackets with a key:value pair. 
+
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/21c3lcaqy8jmti6ye6p9.jpg)
+
 
 The key, which is also referred to as a property name must be a string  while the value property can be of any data type.
 
@@ -29,6 +32,7 @@ let person = {
 };
 ```
 The variable `person` has two properties, i.e `firstName` and `lastName`
+
   
   - New Object keyword
 
@@ -59,9 +63,9 @@ const student2 = new Student("Sally", "Rally", 48, "green");
   ## When should you use objects
   1. Objects are useful in storing with a key-value pair
   2. Useful in grouping values with similar characteristics together to make your code more readable.
-  ## Drawbacks of javaScript objects
-  1. Object properties are unodered, hence does not support accessing items with indexes. You must know the property name.
-  1. Does not support operations such as adding or removing an item at a particular position.
+  ## Drawbacks of JavaScript objects
+  1. Object properties are unordered, hence does not support accessing items with indexes. You must know the property name.
+  2. Does not support operations such as adding or removing an item at a particular position.
 
   ## How to access items in an object
   
@@ -86,7 +90,7 @@ If you access an unassigned property in an object it outputs `undefined` and not
 person.age //undefined
 ```
 
-The dot operation can only be used if the property is a valid javascript identifier.
+The dot operation can only be used if the property is a valid JavaScript identifier.
 
 A dot operation will throw an error if the property name has a space, hyphen or if the property is dynamically determined. In such circumstances use the bracket notation.
 
@@ -158,7 +162,7 @@ similarly, the `hasOwnProperty()` method can be used to check if the property ex
 person.hasOwnProperty('age') //true
 ```
 ## `in` vs `hasOwnProperty()`
-`in` returns true if the object exists in th eobject even if it has been inherited from another object.
+`in` returns true if the object exists in the object even if it has been inherited from another object.
 
 ```javascript
 let obj={
@@ -201,4 +205,4 @@ console.log(person.fullName()) // John Doe
 Note: You can also pass parameters in the method
 
 ## Conclusion
-Objects are a very important data-type in javascript since it forms a building block of many other data tstructures such as linked list and modern javascript classes.
+Objects are a very important data-type in JavaScript since it forms a building block of many other data structures 

@@ -17,7 +17,7 @@ let list1 = {
       val: 3,
       next: {
         data: 3,
-        next: { val: 4, next: { val: 3, next: { val: 3, next: null } } },
+        next: { val: 4, next: { val: 2, next: { val: 3, next: null } } },
       },
     },
   };

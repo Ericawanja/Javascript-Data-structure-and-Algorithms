@@ -11,7 +11,6 @@ in every row, the array starts with 1 and ends with 1 except for the first row.
 **For Example:**
 Input : numRows=5;
 output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
-## Algorithm
 
 ## Code
 ``` javascript
@@ -43,6 +42,6 @@ var addRow = function (triangle) {
   return triangle.push(newRow);
 };
 
-console.log(generate(1));
+console.log(generate(4));
 
 ```

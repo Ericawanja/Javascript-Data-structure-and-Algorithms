@@ -7,13 +7,10 @@ function solution(A) {
   let stack = [];
   for (let i = 0; i < A.length; i++) {
     stack.push(A[i]);
-    //console.log('A', i, A[i])
 
     for (let j = 0; j < A.length; j++) {
       if (j != i && A[i] == A[j]) {
-        // console.log(A[i], A[j])
         stack.pop();
-        // console.log(stack.pop())
       }
     }
     if (stack.length > 0) {

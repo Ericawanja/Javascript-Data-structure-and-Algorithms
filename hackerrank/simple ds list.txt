@@ -1,0 +1,5 @@
+1. palindrome
+2. reverse array
+3. reverse string
+4. prime number
+5. sort  array - numbers and alphabets

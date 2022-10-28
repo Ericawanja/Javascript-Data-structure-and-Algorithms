@@ -76,6 +76,28 @@ function myFunction7(a, b) {
 
 // Write a function that takes an array of strings as argument
 // Return the longest string
-function myFunction(arr) {}
+function myFunction8(arr) {
+  /*let len = 1;
+  let stri_name = "";
+  for (let i = 0; i < arr.length; i++) {
+    let stri_len = arr[i].length;
+    if (stri_len > len) {
+      len = stri_len;
+      stri_name = arr[i];
+    }
+  }*/
+  let stri = arr.reduce((prev, curr) =>
+    prev.length >= curr.length ? prev : curr
+  );
+  return stri;
+}
 
-console.log(myFunction7([-10, 22, 333, 42], [-11, 5, 22, 41, 42]));
+// Write a function that takes an array of objects as argument
+// Sort the array by property b in ascending order
+// Return the sorted array
+function myFunction9(arr) {
+  let sorted = arr.sort((x,y)=>x.b - y.b)
+  return sorted;
+}
+
+console.log(myFunction9([{a:1,b:9},{a:5,b:4}]));

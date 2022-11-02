@@ -32,7 +32,7 @@ function isPalindrome(s) {
     let special =/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/
     //console.log(match);
     if (match !== null && !special.test(s[i])) {
-      console.log(s[i], match);
+     // console.log(s[i], match);
       temp.push(s[i]);
     }
   }

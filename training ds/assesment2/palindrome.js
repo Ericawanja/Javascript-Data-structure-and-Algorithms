@@ -6,4 +6,4 @@ function isPalindrome(int) {
   }
   return true;
 }
-console.log(isPalindrome(-131));
+console.log(isPalindrome(1991));

@@ -1,5 +1,5 @@
 function reverseVowels(s) {
-  const vowels = ["a", "e", "i", "o", "u"];
+  const vowels = ["a", "e", "i", "o", "u", 'A', 'E', 'I', 'O', 'U'];
   let str_vowels = [];
   let vowel_index = [];
   for (let i = 0; i < s.length; i++) {
@@ -36,3 +36,4 @@ function reverseVowels(s) {
 }
 console.log(reverseVowels("hello"));
 console.log(reverseVowels("more"));
+console.log(reverseVowels("hEllo"));

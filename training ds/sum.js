@@ -15,4 +15,3 @@ function sum2(arr){
     }
     return sum;
 }
-function

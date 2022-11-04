@@ -47,11 +47,11 @@ function reverseString2(str) {
       i = i+4
     } else {
       let subStri = arr.slice(i).reverse();
-      console.log(subStri);
+      console.log(subStri, 'el');
       temp.push(subStri.join(''))
       break
     }
   }
   return temp.join('')
 }
-console.log(reverseString("Lorem at"));
+console.log(reverseString2('Tempor ip'));
